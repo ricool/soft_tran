@@ -174,11 +174,11 @@ public class A1 {
 			case "A":
 				System.out.println("Excellent");
 			case "B":
-				System.out.println("Excellent");
+				System.out.println("Very Good");
 			case "C":
-				System.out.println("Excellent");
+				System.out.println("Good");
 			case "Fail":
-				System.out.println("");
+				System.out.println("Sorry Fail");
 			}
 		}
 		else {
