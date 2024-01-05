@@ -127,25 +127,62 @@ public class A1 {
 //}
 	
 //6. Write a program to create simple calculator using switch Statement
+//	public static void main(String[] args) {
+//		Scanner s = new Scanner(System.in);
+//		System.out.println("A:");
+//		int a= s.nextInt();
+//		System.out.println("B:");
+//		int b= s.nextInt();
+//		System.out.println("Select Any in number [1-4]:\n1. Add\n2. Sub\n3. Multi\n4. Div");
+//		int choice = s.nextInt();
+//		switch(choice){
+//			case 1:
+//				System.out.println("A + B = "+ (a+b)); break;
+//			case 2:
+//				System.out.println("A - B = "+ (a-b)); break;
+//			case 3:
+//				System.out.println("A x B = "+ (a*b)); break;
+//			case 4:
+//				System.out.println("A / B = "+ (a/b)); break;
+//			default:
+//				System.out.println("Invalid Choice.");
+//		}
+//	}
+//}
+	
+//7. Write a program to print remark according to the grade obtained using switch statement
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
-		System.out.println("A:");
-		int a= s.nextInt();
-		System.out.println("B:");
-		int b= s.nextInt();
-		System.out.println("Select Any in number [1-4]:\n1. Add\n2. Sub\n3. Multi\n4. Div");
-		int choice = s.nextInt();
-		switch(choice){
-			case 1:
-				System.out.println("A + B ="+ (a+b)); break;
-			case 2:
-				System.out.println("A - B ="+ (a-b)); break;
-			case 3:
-				System.out.println("A x B ="+ (a*b)); break;
-			case 4:
-				System.out.println("A / B ="+ (a/b)); break;
-			default:
-				System.out.println("Invalid Choice.");
+		System.out.println("Percentage:");
+		int p = s.nextInt();
+		String g;
+		if(p>0 && p<=100) {
+			if(p>=90) {
+				g = "A";
+			}
+			else if(p>=60 && p<=89) {
+				g = "B";
+			}
+			else if(p>=40 && p<=59) {
+				g = "C";
+			}
+			else {
+				g = "Fail";
+			}
+		
+			switch(g) {
+			case "A":
+				System.out.println("Excellent");
+			case "B":
+				System.out.println("Excellent");
+			case "C":
+				System.out.println("Excellent");
+			case "Fail":
+				System.out.println("");
+			}
+		}
+		else {
+			System.out.println("Not valid Percentage.");
 		}
 	}
 }
