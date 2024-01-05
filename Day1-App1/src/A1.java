@@ -171,14 +171,14 @@ public class A1 {
 			}
 		
 			switch(g) {
-			case "A":
-				System.out.println("Excellent");
-			case "B":
-				System.out.println("Very Good");
-			case "C":
-				System.out.println("Good");
-			case "Fail":
-				System.out.println("Sorry Fail");
+				case "A":
+					System.out.println("Excellent"); break;
+				case "B":
+					System.out.println("Very Good"); break;
+				case "C":
+					System.out.println("Good"); break;
+				case "Fail":
+				System.out.println("Sorry Fail"); break;
 			}
 		}
 		else {
