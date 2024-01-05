@@ -1,0 +1,54 @@
+import java.util.Scanner;
+
+public class A1 {
+
+	
+//1.⁠ ⁠Write a program to read a weekday number and print weekday name using switch statement
+
+//	public static void main(String[] args) {
+//		Scanner s = new Scanner(System.in);
+//		System.out.println("Select weekday Number from 1-7");
+//		int day= s.nextInt();
+//		
+//		if(day>7) {
+//			switch(day) {
+//			case 1:
+//				System.out.println("Mon");
+//			case 2:
+//				System.out.println("Tue");
+//			case 3:
+//				System.out.println("Wed");
+//			case 4:
+//				System.out.println("Thu");
+//			case 5:
+//				System.out.println("Fri");
+//			case 6:
+//				System.out.println("Sat");
+//			case 7:
+//				System.out.println("Sun");
+//			}
+//		}
+//		else {
+//			System.out.println("Invalid Number.");
+//		}
+//	}
+//
+//}
+	
+//2. Write a program to read gender(M/F) and print the corresponding gender using a switch statement
+	public static void main(String[] args) {
+	Scanner s = new Scanner(System.in);
+	System.out.println("Gender 1.Male 2.Female:");
+	int gen= s.nextInt();
+	
+	if(gen>0 && gen<=2) {
+		switch(gen) {
+			case 1: System.out.println("Male"); break;
+			case 2: System.out.println("Female"); break;
+		}	
+	}
+	else {
+		System.out.println("Invalid choice");
+	}
+	}
+}
